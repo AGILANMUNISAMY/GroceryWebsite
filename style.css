@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-block-size: 100vh;
+}
+
+.container {
+    background: #fff;
+    max-inline-size: 450px;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+}
+
+.form-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-block-end: 1.5rem;
+}
+
+.input-group {
+    position: relative;
+    margin-block-end: 1.5rem;
+}
+
+.input-group i {
+    position: absolute;
+    inset-block-start: 50%;
+    inset-inline-start: 10px;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+input {
+    inline-size: 100%;
+    padding: 0.8rem 2.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: transparent;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: hsl(327, 90%, 28%);
+    outline: none;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+label {
+    position: absolute;
+    inset-block-start: 50%;
+    inset-inline-start: 35px;
+    transform: translateY(-50%);
+    color: #757575;
+    transition: all 0.3s;
+    pointer-events: none;
+}
+
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label {
+    inset-block-start: -10px;
+    inset-inline-start: 15px;
+    font-size: 0.8rem;
+    color: hsl(327, 90%, 28%);
+    background: #fff;
+    padding: 0 5px;
+}
+
+.recover {
+    text-align: end;
+    font-size: 0.9rem;
+    margin-block-end: 1rem;
+}
+
+.recover a {
+    color: #7d7deb;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.recover a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.btn {
+    font-size: 1.1rem;
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: none;
+    inline-size: 100%;
+    background: #7d7deb;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background: #07001f;
+}
+
+.or {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    text-align: center;
+    position: relative;
+}
+
+.or::before,
+.or::after {
+    content: "";
+    position: absolute;
+    inset-block-start: 50%;
+    inline-size: 45%;
+    block-size: 1px;
+    background: #ccc;
+}
+
+.or::before {
+    inset-inline-start: 0;
+}
+
+.or::after {
+    inset-inline-end: 0;
+}
+
+.icons {
+    text-align: center;
+    margin-block-end: 1.5rem;
+}
+
+.icons i {
+    color: #7d7deb;
+    padding: 0.8rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 2px solid #dfe9f5;
+    margin: 0 15px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.icons i:hover {
+    transform: scale(1.1);
+    border-color: #7d7deb;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-weight: bold;
+}
+
+button {
+    background: none;
+    border: none;
+    color: #7d7deb;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+button:hover {
+    color: blue;
+    text-decoration: underline;
+}
